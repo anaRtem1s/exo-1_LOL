@@ -1,0 +1,52 @@
+À partir de ce tableau :
+
+const champions = [
+  // Top
+  "Darius", "Garen", "Malphite", "Fiora", "Camille", "Teemo", "Nasus", "Irelia", "Riven", "Sett",
+  // Jungle
+  "Vi", "Warwick", "Hecarim", "Lee Sin", "Ekko", "Amumu", "Shyvana", "Kha'Zix", "Rengar", "Nidalee",
+  // Mid
+  "Yasuo", "Lux", "Syndra", "Zed", "Ahri", "Fizz", "Orianna", "Veigar", "Viktor", "Katarina",
+  // ADC
+  "Jinx", "Caitlyn", "Ezreal", "Jhin", "Miss Fortune", "Vayne", "Ashe", "Draven", "Kai'Sa", "Xayah",
+  // Support
+  "Thresh", "Lulu", "Blitzcrank", "Soraka", "Nautilus", "Leona", "Morgana", "Zilean", "Nami", "Pyke"
+];
+
+Brief
+=-=-=
+
+Tu disposes d'un tableau de 50 champions de League of Legends. Ton premier objectif est de convertir ce tableau en menu déroulant (<select>) grâce à une boucle.
+
+Ensuite tu pourras composer ton équipe de 5 champions et voir ton roster s'afficher en temps réel !
+
+Ce que tu vas pratiquer
+
+- Une boucle for pour générer des <option> dynamiquement
+- push() pour recruter un champion
+- indexOf() pour éviter les doublons
+- Manipulation du DOM (innerHTML, .value, createElement...)
+
+1. Récupère tes éléments du DOM
+2. Génère les options du select
+3. Écoute le clic sur le bouton
+4. Vérifie si un champion est déjà dans le Roster (et empêcher qu'il soit là 2 fois)
+5. Envoie la valeur dans un tableau et affiche progressivement les héros dans l'ul qui a la classe liste-champions
+6. Ajoute le champion au roster
+7. Crée la fonction afficherRoster()
+8. Quand le roster est complet (5 champions), affiche : ":crossed_swords: Ton équipe est prête, bonne chance sur la faille !"
+9. Ajoute un bouton "Réinitialiser" qui remet le Roster à 0
+
+
+
+HTML
+
+<h1>⚔️ Compose ton équipe</h1>
+
+  <input type="text" class="inputChampion" placeholder="Ex: Jinx, Thresh, Yasuo...">
+  <button class="btnAjouter">Ajouter au roster</button>
+
+  <p class="message"></p>
+  <p>Roster : <span class="compteur">0</span>/5 champions</p>
+
+  <ul class="liste-champions"></ul>
