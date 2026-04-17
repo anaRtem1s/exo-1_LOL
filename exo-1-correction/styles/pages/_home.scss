@@ -1,0 +1,42 @@
+@use '../abstracts/' as *;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+body {
+  font-family: "Quicksand", sans-serif;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: normal;
+}
+.app {
+  width: 50%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  padding:3rem 0;
+  gap: 1rem;
+}
+button, input, select {
+  padding:0.5rem 1rem;
+  border-radius:5px;
+}
+input, select {
+  border:1px solid lightgray;
+}
+button {
+  background:crimson;
+  color:#fff;
+  border:none;
+  cursor:pointer;
+  transition:.3s all ease-in-out;
+  &:hover{
+    background:rgb(182, 11, 46);
+  }
+}
+.select {
+  display: flex;
+  flex-direction: column;
+}
+p {
+  text-align: center;
+}

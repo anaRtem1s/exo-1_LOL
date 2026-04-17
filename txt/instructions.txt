@@ -13,6 +13,8 @@ const champions = [
   "Thresh", "Lulu", "Blitzcrank", "Soraka", "Nautilus", "Leona", "Morgana", "Zilean", "Nami", "Pyke"
 ];
 
+<div class="gameState">5</div> ????
+
 Brief
 =-=-=
 
@@ -23,19 +25,38 @@ Ensuite tu pourras composer ton équipe de 5 champions et voir ton roster s'affi
 Ce que tu vas pratiquer
 
 - Une boucle for pour générer des <option> dynamiquement
-- push() pour recruter un champion
-- indexOf() pour éviter les doublons
-- Manipulation du DOM (innerHTML, .value, createElement...)
 
-1. Récupère tes éléments du DOM
+
+- push() pour recruter un champion //OK
+- indexOf() pour éviter les doublons // OK
+- Manipulation du DOM (innerHTML, .value, // OK
+
+createElement...)
+
+1. Récupère tes éléments du DOM // OK
+
 2. Génère les options du select
-3. Écoute le clic sur le bouton
-4. Vérifie si un champion est déjà dans le Roster (et empêcher qu'il soit là 2 fois)
-5. Envoie la valeur dans un tableau et affiche progressivement les héros dans l'ul qui a la classe liste-champions
+
+3. Écoute le clic sur le bouton // OK
+
+4. Vérifie si un champion est déjà dans le Roster (et empêcher qu'il soit là 2 fois) // OK
+
+5. Envoie la valeur dans un tableau // OK Quel tableau??
+
+.1. Affiche progressivement les héros dans l'ul qui a la classe liste-champions
+
 6. Ajoute le champion au roster
-7. Crée la fonction afficherRoster()
+
+7. Crée la fonction displayRoster() // OK
+
 8. Quand le roster est complet (5 champions), affiche : ":crossed_swords: Ton équipe est prête, bonne chance sur la faille !"
 9. Ajoute un bouton "Réinitialiser" qui remet le Roster à 0
+
+
+
+INSTRUCTIONS ULTÉRIEURES  : 2 façons de sélectionner des persos dans cet exo :
+En en ajoutant un dans l'input
+En en sélectionnant un dans le select : )
 
 
 
